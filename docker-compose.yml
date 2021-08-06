@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:alpine
+    container_name: postgres-db
+    environment:
+      - POSTGRES_DB=casa-do-codigo-db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - 5433:5432
+    volumes:
+      - .docker/dev_data:/var/lib/postgresql
