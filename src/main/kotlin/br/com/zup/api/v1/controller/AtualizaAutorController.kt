@@ -18,8 +18,7 @@ class AtualizaAutorController(val autorRepository: AutorRepository) {
             if (optional.isEmpty) return HttpResponse.notFound()
             val autor = optional.get()
             autor.descricao = descricao
-            autorRepository.update(autor)
-            println()
+//            autorRepository.update(autor)
             HttpResponse.ok(AutorRs(autor))
         }
     }
