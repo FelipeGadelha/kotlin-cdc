@@ -12,6 +12,9 @@ jpa.default.properties.hibernate.hbm2ddl.auto: update
 #jpa.default.properties.hibernate.hbm2ddl.auto: create-drop
 
 
+logger:
+  levels:
+    io.micronaut.transaction: DEBUG
 #datasources:
 #  default:
 #    url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
